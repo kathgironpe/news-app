@@ -1,5 +1,6 @@
 {
   "extends": [
-    "plugin:react-app/recommended"
+    "plugin:react-app/recommended",
+    "airbnb"
   ]
 }
