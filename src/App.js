@@ -8,9 +8,6 @@ class App extends Component {
     return (
       <div className="App" style={{ padding: 20 }}>
         <header className="App-header">
-          <Button variant="raised" color="primary">
-            Hello World
-          </Button>
         </header>
         <Grid container spacing={40}>
         </Grid>
