@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import {About} from './pages/about';
+import { About } from './pages/about';
 import Home from './pages/home';
 import './App.scss';
 
@@ -19,20 +19,23 @@ class App extends Component {
             <Toolbar>
               <Typography>
                 <Link to="/">
-                  <Button>Home</Button>
+                  <Button>
+                    Home
+                  </Button>
                 </Link>
                 <Link to="/about">
-                  <Button>About</Button>
+                  <Button>
+                    About
+                  </Button>
                 </Link>
               </Typography>
             </Toolbar>
           </AppBar>
           <div className="App" style={{ padding: 20 }}>
-            <Grid container spacing={40}>
-            </Grid>
+            <Grid container spacing={40} />
           </div>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
         </Fragment>
       </Router>
     );
